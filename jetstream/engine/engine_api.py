@@ -66,7 +66,7 @@ class ResultTokens(abc.ABC):
   # Shape: [batch, tokens.shape[1] + validity.shape[1] + lengths.shape[1]]
   data: Union[jax.Array, np.ndarray]
   mel_data: Union[jax.Array, np.ndarray]
-  f0_data: Union[jax.Array, np.ndarray]
+  #f0_data: Union[jax.Array, np.ndarray]
   # The range of indices which contain tokens.
   tokens_idx: tuple[int, int] = struct.field(
       pytree_node=False,
